@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "concurrently \"npm run start --prefix chefsync-server\" \"npm run start --prefix chefsync-client\"",
+    "build": "npm run build --prefix chefsync-server && npm run build --prefix chefsync-client"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.13",
+    "concurrently": "^7.6.0",
+    "typescript": "^5.8.2"
+  }
+}
